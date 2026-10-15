@@ -16,3 +16,4 @@ Cada vez que se agrega o modifica un capítulo se registra aquí una línea
 [2026-10-14] Se agrega el capítulo 8 (Personalización de Git) en Word, PDF y notas de comandos.
 [2026-10-14] Se agrega el capítulo 9 (Git y otros sistemas) en Word, PDF y notas de comandos.
 [2026-10-14] Se agrega el capítulo 10 (Los entresijos internos de Git) en Word, PDF y notas de comandos.
+[2026-10-14] Se amplían las notas del capítulo 2 con los comandos más usados en la actividad.

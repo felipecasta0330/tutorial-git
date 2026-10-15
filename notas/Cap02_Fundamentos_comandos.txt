@@ -67,3 +67,10 @@ Notas de comandos del capítulo (resumen rápido para consulta).
   git config --global alias.ultimo "log -1 HEAD"
 
 Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
+
+[Comandos que más usé en esta actividad]
+  git status
+  git add .
+  git commit -m "mensaje"
+  git push
+  git log --oneline
