@@ -1,0 +1,25 @@
+CAPÍTULO 1. INICIO: SOBRE EL CONTROL DE VERSIONES
+=================================================
+
+Notas de comandos del capítulo (resumen rápido para consulta).
+
+
+[1.6 Instalación de Git]
+  brew install git
+  sudo apt install git-all
+  git --version
+
+[1.7 Configuración inicial]
+  git config --global user.name "Tu Nombre"
+  git config --global user.email "tu_correo@ejemplo.com"
+  git config --global core.editor "code --wait"
+  git config --global init.defaultBranch main
+  git config --list
+  git config user.name
+
+[1.8 Cómo obtener ayuda]
+  git help config
+  git config --help
+  git add -h
+
+Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
