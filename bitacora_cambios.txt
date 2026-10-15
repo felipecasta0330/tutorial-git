@@ -12,3 +12,4 @@ Cada vez que se agrega o modifica un capítulo se registra aquí una línea
 [2026-10-14] Se agrega el capítulo 4 (Git en el servidor) en Word, PDF y notas de comandos.
 [2026-10-14] Se agrega el capítulo 5 (Git en entornos distribuidos) en Word, PDF y notas de comandos.
 [2026-10-14] Se agrega el capítulo 6 (GitHub) en Word, PDF y notas de comandos.
+[2026-10-14] Se agrega el capítulo 7 (Herramientas de Git) en Word, PDF y notas de comandos.

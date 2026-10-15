@@ -1,0 +1,73 @@
+CAPÍTULO 7. HERRAMIENTAS DE GIT
+===============================
+
+Notas de comandos del capítulo (resumen rápido para consulta).
+
+
+[7.1 Revisión por selección]
+  git show 1c002dd
+  git show HEAD~2
+  git show HEAD^
+  git show main@{yesterday}
+  git reflog
+  git log main..experimento
+  git log main...experimento --left-right
+
+[7.2 Preparación interactiva]
+  git add -i
+  git add -p
+
+[7.3 Guardado rápido y limpieza]
+  git stash
+  git stash list
+  git stash apply
+  git stash pop
+  git stash drop
+  git clean -n
+  git clean -f -d
+
+[7.4 Firmar el trabajo]
+  git tag -s v1.0 -m "Versión firmada"
+  git commit -S -m "Commit firmado"
+  git log --show-signature
+
+[7.5 Búsqueda]
+  git grep -n funcion
+  git log -S nombre_variable --oneline
+  git log -L :mi_funcion:archivo.py
+
+[7.6 Reescribir la historia]
+  git commit --amend
+  git rebase -i HEAD~3
+
+[7.7 Reset desmitificado]
+  git reset --soft HEAD~1
+  git reset HEAD~1
+  git reset --hard HEAD~1
+
+[7.8 Fusión avanzada]
+  git merge --abort
+  git merge -Xours otra_rama
+  git checkout --conflict=diff3 archivo.txt
+  git revert -m 1 HEAD
+
+[7.9 Rerere]
+  git config --global rerere.enabled true
+
+[7.10 Depuración con Git]
+  git blame -L 10,20 archivo.py
+  git bisect start
+  git bisect bad
+  git bisect good v1.0
+  git bisect reset
+
+[7.11 Submódulos]
+  git submodule add https://github.com/usuario/libreria.git
+  git clone --recurse-submodules https://github.com/usuario/proyecto.git
+  git submodule update --remote
+
+[7.13 Almacenamiento de credenciales]
+  git config --global credential.helper cache
+  git config --global credential.helper store
+
+Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
