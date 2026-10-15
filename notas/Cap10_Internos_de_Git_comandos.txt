@@ -1,0 +1,36 @@
+CAPÍTULO 10. LOS ENTRESIJOS INTERNOS DE GIT
+===========================================
+
+Notas de comandos del capítulo (resumen rápido para consulta).
+
+
+[10.2 Objetos Git]
+  echo "contenido de prueba" | git hash-object -w --stdin
+  git cat-file -p d670460b4b4aece5915caf5c68d12f560a9fe3e4
+  git cat-file -t d670460b
+  git cat-file -p main^{tree}
+  git cat-file -p HEAD
+
+[10.3 Referencias Git]
+  cat .git/refs/heads/main
+  git update-ref refs/heads/main 1a410efb
+  cat .git/HEAD
+  git symbolic-ref HEAD
+
+[10.4 Archivos empaquetadores (packfiles)]
+  git gc
+  git verify-pack -v .git/objects/pack/pack-*.idx
+
+[10.5 Las especificaciones de referencia (refspec)]
+  fetch = +refs/heads/*:refs/remotes/origin/*
+  git push origin main:rama_remota
+  git push origin :rama_a_borrar
+
+[10.7 Mantenimiento y recuperación de datos]
+  git gc --auto
+  git count-objects -v
+  git reflog
+  git fsck --full
+  git branch recuperada ab1afef
+
+Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
