@@ -1,0 +1,26 @@
+CAPÍTULO 9. GIT Y OTROS SISTEMAS
+================================
+
+Notas de comandos del capítulo (resumen rápido para consulta).
+
+
+[9.1 Git como cliente]
+  git svn clone file:///tmp/svn-repo -T trunk -b branches -t tags
+  git svn rebase
+  git svn dcommit
+  git clone hg::/ruta/al/repo-mercurial
+  git p4 clone //depot/proyecto
+  git p4 sync
+  git p4 submit
+
+[9.2 Migración a Git]
+  juanc = Juan Castañeda <juan@ejemplo.com>
+  git svn clone http://servidor/svn/proyecto --authors-file=autores.txt --no-metadata -s mi_proyecto
+  git remote add origin git@github.com:usuario/proyecto.git
+  git push origin --all
+  git push origin --tags
+
+[9.3 Importador personalizado]
+  python mi_importador.py | git fast-import
+
+Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
