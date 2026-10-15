@@ -1,0 +1,12 @@
+# Archivos temporales de Word (se crean mientras un .docx está abierto)
+~$*.docx
+~$*.doc
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales varios
+*.tmp
+*.log

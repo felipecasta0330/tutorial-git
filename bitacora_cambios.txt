@@ -1,0 +1,8 @@
+BITÁCORA DE CAMBIOS — TUTORIAL DE GIT
+Autor: Juan Felipe Castañeda Rodríguez
+=====================================
+
+Cada vez que se agrega o modifica un capítulo se registra aquí una línea
+(fecha | cambio realizado) antes de hacer git add, git commit y git push.
+
+[2026-10-14] Se crea la estructura inicial del repositorio (carpetas word, pdf, notas), el .gitignore y esta bitácora.
