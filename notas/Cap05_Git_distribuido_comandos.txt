@@ -1,0 +1,35 @@
+CAPÍTULO 5. GIT EN ENTORNOS DISTRIBUIDOS
+========================================
+
+Notas de comandos del capítulo (resumen rápido para consulta).
+
+
+[5.2 Contribuir a un proyecto]
+  git diff --check
+  git fetch origin
+  git merge origin/main
+  git push origin main
+  git clone https://github.com/mi_usuario/proyecto.git
+  git switch -c mejora
+  # ...cambios y commits...
+  git push -u origin mejora
+  git request-pull origin/main mi_fork
+  git format-patch -M origin/main
+  git send-email *.patch
+
+[5.3 Mantener un proyecto]
+  git switch -c sc/funcion_nueva main
+  git apply --check parche.patch
+  git apply parche.patch
+  git am 0001-mejora.patch
+  git remote add colaborador https://github.com/colaborador/proyecto.git
+  git fetch colaborador
+  git log main..colaborador/mejora
+  git diff main...colaborador/mejora
+  git cherry-pick e43a6fd3
+  git tag -s v1.5 -m "Versión 1.5 firmada"
+  git describe main
+  git archive main --prefix="proyecto/" --format=zip > proyecto.zip
+  git shortlog --no-merges main --not v1.0
+
+Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
