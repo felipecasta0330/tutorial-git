@@ -9,3 +9,4 @@ Cada vez que se agrega o modifica un capítulo se registra aquí una línea
 [2026-10-14] Se agrega el capítulo 1 (Inicio) en Word, PDF y notas de comandos.
 [2026-10-14] Se agrega el capítulo 2 (Fundamentos) en Word, PDF y notas de comandos.
 [2026-10-14] Se agrega el capítulo 3 (Ramificaciones) en Word, PDF y notas de comandos.
+[2026-10-14] Se agrega el capítulo 4 (Git en el servidor) en Word, PDF y notas de comandos.
