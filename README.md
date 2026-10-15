@@ -61,7 +61,7 @@ Desde **New repository** se creó el repositorio público `tutorial-git`, inicia
 
 ### Paso 4 — Clonar el repositorio
 ```bash
-git clone https://github.com/<usuario>/tutorial-git.git
+git clone https://github.com/felipecasta0330/tutorial-git.git
 cd tutorial-git
 ```
 
