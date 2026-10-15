@@ -1,0 +1,24 @@
+CAPÍTULO 8. PERSONALIZACIÓN DE GIT
+==================================
+
+Notas de comandos del capítulo (resumen rápido para consulta).
+
+
+[8.1 Configuración de Git]
+  git config --global core.editor "code --wait"
+  git config --global commit.template ~/.plantilla_commit.txt
+  git config --global core.pager "less -FRSX"
+  git config --global help.autocorrect 20
+  git config --global color.ui auto
+  git config --global color.diff.meta "blue black bold"
+  git config --global merge.tool meld
+  git config --global diff.tool vscode
+  git config --global core.autocrlf true
+  git config --global core.autocrlf input
+
+[8.2 Atributos de Git]
+  *.pdf binary
+  *.docx diff=word
+  git config diff.word.textconv docx2txt
+
+Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
