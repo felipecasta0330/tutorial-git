@@ -1,0 +1,69 @@
+CAPÍTULO 2. FUNDAMENTOS DE GIT
+==============================
+
+Notas de comandos del capítulo (resumen rápido para consulta).
+
+
+[2.1 Obtener un repositorio]
+  cd mi_proyecto
+  git init
+  git clone https://github.com/usuario/repositorio.git
+  git clone https://github.com/usuario/repositorio.git otra_carpeta
+
+[2.2 Guardar cambios en el repositorio]
+  git status
+  git status -s
+  git add README.md
+  git add .
+  *.log
+  *.tmp
+  __pycache__/
+  .ipynb_checkpoints/
+  !importante.log
+  git diff
+  git diff --staged
+  git commit -m "Agrega capítulo 2 del tutorial de Git"
+  git commit -a -m "Corrige ortografía en capítulo 1"
+  git rm archivo.txt
+  git rm --cached archivo.txt
+  git mv nombre_viejo.txt nombre_nuevo.txt
+
+[2.3 Ver el historial de confirmaciones]
+  git log
+  git log -p -2
+  git log --stat
+  git log --oneline --graph --all
+  git log --since=2.weeks --author="Juan"
+  git log --pretty=format:"%h - %an, %ar : %s"
+
+[2.4 Deshacer cosas]
+  git commit --amend
+  git restore --staged archivo.txt
+  git reset HEAD archivo.txt
+  git restore archivo.txt
+  git checkout -- archivo.txt
+
+[2.5 Trabajar con remotos]
+  git remote -v
+  git remote add origin https://github.com/usuario/repo.git
+  git fetch origin
+  git pull
+  git push origin main
+  git remote show origin
+  git remote rename origin principal
+  git remote remove principal
+
+[2.6 Etiquetado]
+  git tag
+  git tag -a v1.0 -m "Primera versión del tutorial"
+  git tag v1.0-ligera
+  git show v1.0
+  git push origin v1.0
+  git push origin --tags
+
+[2.7 Alias]
+  git config --global alias.st status
+  git config --global alias.co checkout
+  git config --global alias.ultimo "log -1 HEAD"
+
+Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
