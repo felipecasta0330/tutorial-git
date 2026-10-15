@@ -1,0 +1,53 @@
+CAPÍTULO 3. RAMIFICACIONES EN GIT
+=================================
+
+Notas de comandos del capítulo (resumen rápido para consulta).
+
+
+[3.1 ¿Qué es una rama?]
+  git branch pruebas
+  git switch pruebas
+  git checkout pruebas
+  git switch -c nueva_funcion
+  git checkout -b nueva_funcion
+  git log --oneline --decorate --graph --all
+
+[3.2 Procedimientos básicos de ramificación y fusión]
+  git switch main
+  git switch -c correccion
+  # ...se corrige y se confirma...
+  git switch main
+  git merge correccion
+  git branch -d correccion
+  <<<<<<< HEAD
+  contenido de la rama actual
+  =======
+  contenido de la otra rama
+  >>>>>>> correccion
+  git add archivo.txt
+  git commit
+
+[3.3 Gestión de ramas]
+  git branch
+  git branch -v
+  git branch --merged
+  git branch --no-merged
+  git branch -d rama_fusionada
+  git branch -D rama_no_fusionada
+  git branch --move nombre_viejo nombre_nuevo
+
+[3.5 Ramas remotas]
+  git fetch origin
+  git push origin nueva_funcion
+  git switch --track origin/nueva_funcion
+  git branch -vv
+  git push origin --delete nueva_funcion
+  git push -u origin main
+
+[3.6 Reorganizar el trabajo (rebase)]
+  git switch experimento
+  git rebase main
+  git switch main
+  git merge experimento
+
+Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
