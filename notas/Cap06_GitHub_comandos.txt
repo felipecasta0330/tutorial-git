@@ -1,0 +1,23 @@
+CAPÍTULO 6. GITHUB
+==================
+
+Notas de comandos del capítulo (resumen rápido para consulta).
+
+
+[6.1 Creación y configuración de la cuenta]
+  ssh-keygen -t ed25519 -C "tu_correo@ejemplo.com"
+  ssh -T git@github.com
+
+[6.2 Crear un repositorio]
+  git clone https://github.com/usuario/tutorial-git.git
+  git remote add origin https://github.com/usuario/tutorial-git.git
+  git branch -M main
+  git push -u origin main
+
+[6.3 Participar en proyectos]
+  git remote add upstream https://github.com/original/proyecto.git
+  git fetch upstream
+  git merge upstream/main
+  git push origin main
+
+Fuente: Chacon, S., & Straub, B. (2014). Pro Git. https://git-scm.com/book/es/v2
